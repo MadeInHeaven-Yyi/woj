@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(void){
 	int m,p,n,sal;
-	while(scanf("%d%d%d",&m,&p,&n)!=EOF){
+	while(~scanf("%d%d%d",&m,&p,&n)){//没输入跳出循环
 		if(m==0&&p==0&&n==0)
 		break;
 		sal=n*p;
