@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(void){
+	int m,p,n,sal;
+	while(scanf("%d%d%d",&m,&p,&n)!=EOF){
+		if(m==0&&p==0&&n==0)
+		break;
+		sal=n*p;
+		if(sal>m)
+		printf("%d",sal);
+		else
+		printf("%d",m);
+		printf("\n");
+	}
+	return 0;
+}
