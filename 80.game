@@ -1,0 +1,14 @@
+//n为14倍数后手胜利 其他先手胜利
+#include<stdio.h>
+int main(){
+	int nCase,n;
+	scanf("%d",&nCase);
+	while(nCase--){
+		scanf("%d",&n);
+		if(n%14==0)
+		printf("snoopy wins the game!\n");
+		else
+		printf("flymouse wins the game!\n");			
+	}
+	return 0;
+}
