@@ -1,0 +1,15 @@
+#include<stdio.h>
+char str[55];
+int main(void){
+	int i,n=1;
+	while(scanf("%s",&str)){
+		if(str[0]=='#')
+		break;
+		for(i=0;str[i]!='\0';i++){
+			if(i%2==1)
+			str[i]=str[i]-'a'+'A';
+		}
+		printf("Case %d: %s\n",n++,str);
+	}
+	return 0;
+} 
